@@ -1,1 +1,13 @@
-<p>filters works!</p>
+<div class="wrapper">
+  <div class="filters" (click)="toggle()">
+    <span>Filters</span>
+    <div class="icon filter"></div>
+  </div>
+  <div class="search-wrapper">
+    <input (keyup)="publishFilterVal()" [(ngModel)]="searchVal" type="text" class="search" placeholder="Search">
+    <div class="icon"></div>
+  </div>
+  <div class="sorting">
+    <app-custom-toggler (sortingBy)="sortingBy($event)"></app-custom-toggler>
+  </div>
+</div>

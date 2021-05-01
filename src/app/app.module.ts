@@ -7,6 +7,15 @@ import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { TableComponent } from './components/shared/table/table.component';
 import { FiltersComponent } from './components/shared/filters/filters.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SortService } from './services/sort.service';
+import { CustomTogglerComponent } from './components/shared/custom-toggler/custom-toggler.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchFilterPipe } from './pipes/search-filter.pipe';
+import { DataService } from './services/data.service';
+import { ActivatedRouteSnapshot, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,13 +23,23 @@ import { FiltersComponent } from './components/shared/filters/filters.component'
     HomeComponent,
     ProfileComponent,
     TableComponent,
-    FiltersComponent
+    FiltersComponent,
+    CustomTogglerComponent,
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    DataService,
+    SortService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

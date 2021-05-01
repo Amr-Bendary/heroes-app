@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "A) MR. ROBOT",
+    "powers": "B) Coding with VIM, Know Angular",
+    "rate": 4
+  }, {
+    "id": 3,
+    "name": "C) Richard Stallman",
+    "powers": "A) Freedom Protector",
+    "rate": 5
+  }, {
+    "id": 2,
+    "name": "B) Tim Berners-Lee",
+    "powers": "C) Transport Objects Through HTTP",
+    "rate": 3
+  }
+]

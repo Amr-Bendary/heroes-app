@@ -1,0 +1,50 @@
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px 10px;
+  border: 2px solid #ccc;
+  line-height: 1.4rem;
+}
+
+span {
+  font-size: 2rem;
+  color: red !important;
+}
+
+.fa {
+  margin-left: 1rem;
+}
+
+.hero-name {
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.hero-name:hover {
+  color: blueviolet;
+}
+
+.star {
+  font-size: 1.4rem;
+  color: #aaa !important;
+  transition: .2s ease-in-out;
+}
+
+.filled {
+  color: blueviolet !important;
+  transition: .2s ease-in-out;
+}
+
+@media(max-width: 767px) {
+  .table-wrapper table {
+    margin-bottom: 2rem;
+  }
+
+  td {
+    width: 70%;
+  }
+}

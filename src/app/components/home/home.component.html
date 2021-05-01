@@ -1,1 +1,10 @@
-<p>home works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 col-lg-3">
+      <app-filters (getFilterVal)="getFilterVal($event)" (switchSorting)="switchSorting($event)"></app-filters>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-9">
+      <app-table [sortedHeroes]="sortedHeroes" [filterVal]="filterVal"></app-table>
+    </div>
+  </div>
+</div>
